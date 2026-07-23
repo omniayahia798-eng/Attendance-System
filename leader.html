@@ -1,0 +1,27 @@
+<!-- leader.html (شاشة ليدر الدفعة) -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>لوحة ليدر الدفعة</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; padding: 20px; }
+        .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .btn-export { background: #17a2b8; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background: #6c757d; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>تقرير حضور الدفعة - ليدر الدفعة</h2>
+        <button class="btn-export" onclick="alert('جاري تحميل التقرير...')">تصدير التقرير</button>
+        <table>
+            <tr><th>اسم الطالب</th><th>الوقت</th><th>الحالة</th></tr>
+            <tr><td>محمد خالد</td><td>09:00 صباحاً</td><td>حاضر</td></tr>
+            <tr><td>عمر يوسف</td><td>09:15 صباحاً</td><td>متأخر</td></tr>
+        </table>
+    </div>
+</body>
+</html>
